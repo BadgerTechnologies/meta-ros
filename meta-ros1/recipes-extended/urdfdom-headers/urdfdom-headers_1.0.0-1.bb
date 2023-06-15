@@ -27,3 +27,4 @@ ALLOW_EMPTY:${PN} = "1"
 inherit cmake
 # This recipe is generated for ROS 2 distros.
 inherit ros_recipe_now_generated
+BBCLASSEXTEND = "native"

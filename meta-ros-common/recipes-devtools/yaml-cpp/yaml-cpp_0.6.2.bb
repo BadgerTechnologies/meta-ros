@@ -23,3 +23,4 @@ FILES:${PN}-gtest += " \
     ${libdir}/libgtest.so \
     ${libdir}/libgmock.so \
 "
+BBCLASSEXTEND = "native"

@@ -36,3 +36,4 @@ inherit ros_recipe_now_generated
 
 # *.cmake files have hardcoded sysroot-s in them.
 SSTATE_SCAN_FILES:append = " *.cmake"
+BBCLASSEXTEND = "native"

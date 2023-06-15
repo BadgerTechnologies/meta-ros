@@ -56,3 +56,4 @@ S = "${WORKDIR}/git"
 ROS_BUILD_TYPE = "catkin"
 
 inherit ros_${ROS_BUILD_TYPE}
+BBCLASSEXTEND = "native"
