@@ -10,7 +10,7 @@ AUTHOR = "Mike Purvis <mpurvis@clearpathrobotics.com>"
 ROS_AUTHOR = "Mike Purvis"
 HOMEPAGE = "http://ros.org/wiki/roslint"
 SECTION = "devel"
-LICENSE = "BSD"
+LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://package.xml;beginline=11;endline=11;md5=d566ef916e9dedc494f5f793a6690ba5"
 
 ROS_CN = "roslint"
@@ -45,5 +45,7 @@ SRCREV = "72fbf79c8ec0a5d8245aefafe1f8f7463b228652"
 S = "${WORKDIR}/git"
 
 ROS_BUILD_TYPE = "catkin"
+
+export LEEFOO="73"
 
 inherit ros_${ROS_BUILD_TYPE}
