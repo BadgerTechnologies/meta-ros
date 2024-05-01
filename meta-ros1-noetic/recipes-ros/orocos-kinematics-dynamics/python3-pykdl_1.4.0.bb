@@ -15,7 +15,7 @@ S = "${WORKDIR}/git/python_orocos_kdl"
 
 inherit cmake python3native python3-dir
 
-DEPENDS += "orocos-kdl sip3-native sip3 libeigen"
+DEPENDS += "orocos-kdl sip-native sip libeigen"
 
 # sip3-native from meta-oe, doesn't provide sipconfig/sipbuild used by FindSIP.cmake/FindSIP.py
 # https://riverbankcomputing.com/pipermail/pyqt/2019-November/042312.html
