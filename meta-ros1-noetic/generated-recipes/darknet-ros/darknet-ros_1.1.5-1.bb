@@ -91,8 +91,9 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/leggedrobotics/darknet_ros-release/archive/release/noetic/darknet_ros/1.1.5-1.tar.gz
 ROS_BRANCH ?= "branch=release/noetic/darknet_ros"
-SRC_URI = "git://github.com/leggedrobotics/darknet_ros-release;${ROS_BRANCH};protocol=https"
-SRCREV = "9f448396ffa31cb6e4383de6205ac4025436fdf3"
+SRC_URI = "git://github.com/leggedrobotics/darknet_ros-release;name=release;${ROS_BRANCH};protocol=https"
+SRCREV_release = "9f448396ffa31cb6e4383de6205ac4025436fdf3"
+SRCREV_FORMAT = "release"
 S = "${WORKDIR}/git"
 
 ROS_BUILD_TYPE = "catkin"

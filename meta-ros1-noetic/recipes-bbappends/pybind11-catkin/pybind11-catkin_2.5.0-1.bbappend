@@ -9,6 +9,7 @@ SRC_URI += "file://0001-CMakeLists.txt-fetch-pybind11-with-bitbake-fetcher.patch
 "
 
 SRCREV_pybind11-upstream = "014cd12ec1a3258f3bfc6597f371ed46c8e89ccd"
+SRCREV_FORMAT .= "_pybind11-upstream"
 
 # Otherwise picks native python instead of the target one and fails with:
 # | Re-run cmake no build system arguments

@@ -10,6 +10,7 @@ SRC_URI += "file://0001-CMakeLists.txt-fetch-libcmt-with-bitbake-fetcher.patch \
     git://github.com/delmottea/libCMT.git;protocol=https;name=libcmt-upstream;destsuffix=git/libcmt-upstream;branch=master \
 "
 SRCREV_libcmt-upstream = "e4d7ea42edafe13b1070ef4d595b2d6062d79d1a"
+SRCREV_FORMAT .= "_libcmt-upstream"
 
 # CMakeLists.txt just calls make install in libcmt-ustream, which doesn't work
 # as we're using ninja by default, lets do what cmake.bbclass does, just inside

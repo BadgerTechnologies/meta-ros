@@ -42,9 +42,10 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/tier4/osqp_vendor-release/archive/release/noetic/osqp_vendor/0.1.2-1.tar.gz
 ROS_BRANCH ?= "branch=release/noetic/osqp_vendor"
-SRC_URI = "git://github.com/tier4/osqp_vendor-release;${ROS_BRANCH};protocol=https"
-SRCREV = "0bc19f9df13028fed6b03ce0bc3eb1b984dbcbc8"
+SRC_URI = "git://github.com/tier4/osqp_vendor-release;name=release;${ROS_BRANCH};protocol=https"
+SRCREV_release = "0bc19f9df13028fed6b03ce0bc3eb1b984dbcbc8"
 S = "${WORKDIR}/git"
+SRCREV_FORMAT = "release"
 
 ROS_BUILD_TYPE = "catkin"
 

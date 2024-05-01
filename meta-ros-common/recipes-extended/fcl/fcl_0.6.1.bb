@@ -6,11 +6,13 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=7de20b14c33be61ee0c714b41e286d0b"
 # Octomap dependency not included as it is optional.
 DEPENDS = "boost libccd libeigen"
 
-SRCREV = "97455a46de121fb7c0f749e21a58b1b54cd2c6be"
 ROS_BRANCH ?= "branch=master"
 SRC_URI = " \
-    git://github.com/flexible-collision-library/fcl;${ROS_BRANCH};protocol=https \
+    git://github.com/flexible-collision-library/fcl;name=release;${ROS_BRANCH};protocol=https \
 "
+SRCREV_release = "97455a46de121fb7c0f749e21a58b1b54cd2c6be"
+
+SRCREV_FORMAT = "release"
 
 S = "${WORKDIR}/git"
 

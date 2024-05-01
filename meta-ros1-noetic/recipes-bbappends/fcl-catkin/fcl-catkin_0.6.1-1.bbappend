@@ -8,6 +8,7 @@ SRC_URI += "file://0001-CMakeLists.txt-fetch-fcl-with-bitbake-fetcher.patch \
     git://github.com/flexible-collision-library/fcl.git;protocol=https;name=fcl-upstream;destsuffix=git/fcl-upstream;branch=master \
 "
 SRCREV_fcl-upstream = "97455a46de121fb7c0f749e21a58b1b54cd2c6be"
+SRCREV_FORMAT .= "_fcl-upstream"
 
 # WARNING: fcl-catkin-0.6.0-1-r0 do_package: QA Issue: fcl-catkin: Files/directories were installed but not shipped in any package:
 #   /opt/ros/melodic/lib/libfcl.so.0.6

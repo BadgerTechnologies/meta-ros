@@ -51,9 +51,10 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/tork-a/jsk_3rdparty-release/archive/release/noetic/slic/2.1.21-2.tar.gz
 ROS_BRANCH ?= "branch=release/noetic/slic"
-SRC_URI = "git://github.com/tork-a/jsk_3rdparty-release;${ROS_BRANCH};protocol=https"
-SRCREV = "eaf1f04cb1e6a47c05d599f057688e9d655993bc"
+SRC_URI = "git://github.com/tork-a/jsk_3rdparty-release;name=release;${ROS_BRANCH};protocol=https"
+SRCREV_release = "eaf1f04cb1e6a47c05d599f057688e9d655993bc"
 S = "${WORKDIR}/git"
+SRCREV_FORMAT = "release"
 
 ROS_BUILD_TYPE = "cmake"
 

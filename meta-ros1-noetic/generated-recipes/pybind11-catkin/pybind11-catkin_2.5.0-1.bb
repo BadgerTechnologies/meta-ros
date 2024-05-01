@@ -43,9 +43,10 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/wxmerkt/pybind11_catkin-release/archive/release/noetic/pybind11_catkin/2.5.0-1.tar.gz
 ROS_BRANCH ?= "branch=release/noetic/pybind11_catkin"
-SRC_URI = "git://github.com/wxmerkt/pybind11_catkin-release;${ROS_BRANCH};protocol=https"
-SRCREV = "7e675c234b27905894456c8633b829938666610d"
+SRC_URI = "git://github.com/wxmerkt/pybind11_catkin-release;name=release;${ROS_BRANCH};protocol=https"
+SRCREV_release = "7e675c234b27905894456c8633b829938666610d"
 S = "${WORKDIR}/git"
+SRCREV_FORMAT = "release"
 
 ROS_BUILD_TYPE = "catkin"
 

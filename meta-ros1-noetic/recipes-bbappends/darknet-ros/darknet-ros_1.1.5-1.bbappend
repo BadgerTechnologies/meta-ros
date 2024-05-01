@@ -28,6 +28,8 @@ SRC_URI[yolov2-tiny.sha256sum] = "16f4e870f1aed83f0089cb69bfda6b53cb7b2a4a01721b
 SRC_URI[yolov3.sha256sum] = "523e4e69e1d015393a1b0a441cef1d9c7659e3eb2d7e15f793f060a21b32f297"
 SRC_URI[yolov2.sha256sum] = "d9945162ed6f54ce1a901e3ec537bdba4d572ecae7873087bd730e5a7942df3f"
 
+SRCREV_FOMAT .= "_darknet"
+
 do_configure:prepend() {
     # we have used "yolo-${YOLO_RELEASE}-" as a prefix in downloadfilename
     # to make sure files in DL_DIR contain a version (so that they are properly re-downloaded

@@ -54,9 +54,10 @@ RDEPENDS:${PN} += "${ROS_EXEC_DEPENDS}"
 
 # matches with: https://github.com/boschresearch/fmi_adapter-release/archive/release/noetic/fmi_adapter/1.0.4-1.tar.gz
 ROS_BRANCH ?= "branch=release/noetic/fmi_adapter"
-SRC_URI = "git://github.com/boschresearch/fmi_adapter-release;${ROS_BRANCH};protocol=https"
-SRCREV = "ebabc0691f1083e87d45e2199032550cc6a6646a"
+SRC_URI = "git://github.com/boschresearch/fmi_adapter-release;name=release;${ROS_BRANCH};protocol=https"
+SRCREV_release = "ebabc0691f1083e87d45e2199032550cc6a6646a"
 S = "${WORKDIR}/git"
+SRCREV_FORMAT = "release"
 
 ROS_BUILD_TYPE = "catkin"
 
