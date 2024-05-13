@@ -36,7 +36,6 @@ ROS_EXEC_DEPENDS = " \
     fuse-optimizers \
     fuse-publishers \
     fuse-variables \
-    fuse-viz \
 "
 
 # Currently informational only -- see http://www.ros.org/reps/rep-0149.html#dependency-tags.
