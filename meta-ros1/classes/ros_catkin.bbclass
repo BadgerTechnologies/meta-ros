@@ -54,4 +54,6 @@ do_install:append() {
             sed -i -e s:${STAGING_BINDIR_NATIVE}:${bindir}:g $i
         fi
     done
+    # Remove all pycache files. We don't want to install these.
+    find ${D}${ros_prefix} -path "*/__pycache__/*" -name "*.pyc" -delete
 }
