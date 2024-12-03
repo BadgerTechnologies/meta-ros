@@ -33,6 +33,7 @@ PKG_CONFIG_PATH .= ":${PKG_CONFIG_DIR}:${STAGING_DIR_HOST}${ros_libdir}/pkgconfi
 PYTHON_SITEPACKAGES_DIR = "${ros_libdir}/${PYTHON_DIR}/site-packages"
 export PYTHONPATH:prepend = "${STAGING_DIR_NATIVE}${PYTHON_SITEPACKAGES_DIR}:"
 PYTHONPATH:class-native:prepend = "${PYTHON_SITEPACKAGES_DIR}:"
+export PYTHONPATH
 
 FILES_SOLIBSDEV += " ${ros_libdir}/lib*${SOLIBSDEV}"
 
