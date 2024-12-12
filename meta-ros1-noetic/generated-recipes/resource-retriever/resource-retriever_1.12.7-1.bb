@@ -17,7 +17,7 @@ ROS_CN = "resource_retriever"
 ROS_BPN = "resource_retriever"
 
 ROS_BUILD_DEPENDS = " \
-    ${ROS_UNRESOLVED_DEP-libcurl-dev} \
+    curl \
     boost \
     rosconsole \
     roslib \
@@ -36,7 +36,7 @@ ROS_EXPORT_DEPENDS = " \
 ROS_BUILDTOOL_EXPORT_DEPENDS = ""
 
 ROS_EXEC_DEPENDS = " \
-    ${ROS_UNRESOLVED_DEP-libcurl} \
+    curl \
     boost \
     python3-rospkg \
     rosconsole \
