@@ -196,6 +196,6 @@ SKIP_RECIPE[zenoh-bridge-dds] ?= "${@bb.utils.contains_any('ROS_WORLD_SKIP_GROUP
 
 # Renamed to fuse-ros in recipes-bbappends/fuse to avoid conflict with
 # meta-filesystems/recipes-support/fuse/fuse_2.9.9.bb
-BBMASK +=  "generated-recipes/fuse/fuse_1.0.1-3.bb"
+BBMASK +=  "generated-recipes/fuse/fuse_1.1.1-1.bb"
 # And renamed fuse-doc to fuse-ros-doc to avoid conflict with PN-doc package created by fuse recipe
 BBMASK +=  "generated-recipes/fuse/fuse-doc_1.0.1-3.bb"
